@@ -1,1 +1,1 @@
-## A Bicycle renting demand forecast using some machine learning model.
+## A Bicycle renting demand forecast using some machine learning models.
