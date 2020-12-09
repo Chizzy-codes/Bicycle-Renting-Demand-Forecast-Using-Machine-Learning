@@ -1,3 +1,49 @@
+Kaggle Bike Sharing Demand Challenge
+In Kaggle knowledge competition – Bike Sharing Demand, 
+the participants are asked to forecast bike rental demand of Bike sharing program in Washington, D.C 
+based on historical usage patterns in relation with weather, time and other data.
+
+Using these Bike Sharing systems, 
+people rent a bike from one location and return it to a different or same place on need basis. 
+People can rent a bike through membership (mostly regular users) or on demand basis (mostly casual users). 
+This process is controlled by a network of automated kiosk across the city.
+
+Solution
+
+Step 1. Hypothesis Generation
+
+2. Understanding the Data Set
+
+3. Importing Data set and Basic Data Exploration
+
+4. Hypothesis Testing (using multivariate analysis)
+
+5. Feature Engineering
+
+6. Model Building
+
+
+Step 1. Hypothesis Generation
+Before exploring the data to understand the relationship between variables, I’d recommend you to focus on hypothesis generation first. 
+Now, this might sound counter-intuitive for solving a data science problem, but if there is one thing I have learnt over years, it is this. 
+Before exploring data, you should spend some time thinking about the business problem, 
+gaining the domain knowledge and may be gaining first hand experience of the problem (only if I could travel to North America!)
+
+How does it help? This practice usually helps you form better features later on, which are not biased by the data available in the dataset. 
+At this stage, you are expected to posses structured thinking i.e. a thinking process which takes into consideration all the possible aspects of a particular problem.
+
+Here are some of the hypothesis which I thought could influence the demand of bikes:
+
+Hourly trend: There must be high demand during office timings. Early morning and late evening can have different trend (cyclist) and low demand during 10:00 pm to 4:00 am.
+Daily Trend: Registered users demand more bike on weekdays as compared to weekend or holiday.
+Rain: The demand of bikes will be lower on a rainy day as compared to a sunny day. Similarly, higher humidity will cause to lower the demand and vice versa.
+Temperature: In India, temperature has negative correlation with bike demand. But, after looking at Washington’s temperature graph, I presume it may have positive correlation.
+Pollution: If the pollution level in a city starts soaring, people may start using Bike (it may be influenced by government / company policies or increased awareness).
+Time: Total demand should have higher contribution of registered user as compared to casual because registered user base would increase over time.
+
+
+You are provided hourly rental data spanning two years. 
+
 For this project, the training set is comprised of the first 19 days of each month, 
 while the test set is the 20th to the end of the month. 
 My goal was to predict the total count of bikes rented during each hour covered by the test set, 
